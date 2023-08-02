@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Component with Toggle</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="pricing-container">
+    <h1>Pricing Plans</h1>
+    <div class="toggle-container">
+      <span class="toggle-label">Monthly</span>
+      <label class="switch">
+        <input type="checkbox" id="toggle" onclick="togglePricing()">
+        <span class="slider round"></span>
+      </label>
+      <span class="toggle-label">Yearly</span>
+    </div>
+    <div class="pricing">
+      <div class="plan basic">
+        <h2>Basic Plan</h2>
+        <p class="price" id="basicPrice">$10<span>/month</span></p>
+        <ul>
+          <li>5GB Storage</li>
+          <li>10 Users</li>
+          <li>Email Support</li>
+        </ul>
+        <button>Select</button>
+      </div>
+      <div class="plan premium">
+        <h2>Premium Plan</h2>
+        <p class="price" id="premiumPrice">$20<span>/month</span></p>
+        <ul>
+          <li>15GB Storage</li>
+          <li>20 Users</li>
+          <li>Email/Phone Support</li>
+        </ul>
+        <button>Select</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
