@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Listings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Job Listings</h1>
+    <div class="filters">
+      <label for="location">Location:</label>
+      <select id="location">
+        <option value="all">All</option>
+        <option value="new-york">New York</option>
+        <option value="los-angeles">Los Angeles</option>
+        <!-- Add more location options here -->
+      </select>
+
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="programming">Programming</option>
+        <option value="design">Design</option>
+        <!-- Add more category options here -->
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section class="job-listings">
+      <div class="job-item">
+        <h2>Software Engineer</h2>
+        <p>Location: New York</p>
+        <p>Category: Programming</p>
+      </div>
+      <!-- Add more job listings here -->
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
